@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+	<div class="levelsWrapper">
+		<div class="title"> 
+			<h1> Выберите уровень сложности: </h1>
+			<p class="choose"> Выберите сложность и игра начнется. Чем выше уровень - тем больше будет выборка карт </p>
+		</div>
+		<div class="levels"> 
+			<ul class="levelChoose">
+				<li id="easy"> Простой </li>
+				<li id="medium"> Средний </li>
+				<li id="hard"> Сложный </li>
+			</ul>
+		</div>
+		<div class="forms">
+			<div class="button">
+				<button class="buttonClick"> <span class="button"> Начать игру  </span> </button>
+			</div>
+			<div class="cards">
+				<img src="card.png" class="card1">
+				<img src="card.png" class="card2">
+			</div>
+		</div>
+	</div>
+	<div class="gameWrapper hide"> 
+		<div class="flipCard hover">
+    		<div class="flipCardInner" id="flipCardInner">
+    			<div class="flipCardFront" name="flipCardFront">
+    			</div>
+    			<div class="flipCardBack">
+    			</div>
+  			</div>
+		</div>
+	</div>
+	<script src="script.js"></script>
+</body>
+</html>
