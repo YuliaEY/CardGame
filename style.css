@@ -127,14 +127,14 @@ span.button {
     backface-visibility: hidden;
 }
 .flipCardFront {
-	background: url(card.png); 
+	background: url(card.png) center/cover; 
 }
 .flipCardBack{
-	background: url(cardBack.png);
+	background: url(cardBack.png) center/cover;
 	transform: rotateY(180deg);
 }
 .bugCard{
-	background: url(bug.png);
+	background: url(bug.png) center/cover;
 }
 .rotate {
 	transform: rotateY(180deg)
@@ -147,6 +147,10 @@ span.button {
  @media (max-width: 992px) {
  	html {
  		max-width: 992px;
+ 	}
+ 	.flipCard  {
+ 		width: 200px;
+ 		height: 312px;
  	}
  	img {
  		width: 200px;
@@ -165,6 +169,10 @@ span.button {
  	html {
  		max-width: 768px;
  	}	
+ 	.flipCard {
+ 		width: 120px;
+ 		height: 187px;
+ 	}
  	img {
  		width: 120px;
  	}
@@ -196,9 +204,6 @@ span.button {
 	body{
 		height: 80%;
 	}
-	img {
- 		width: 120px;
- 	}
  	h1 {
  		font-size: 35px;
     	line-height: 50px;
